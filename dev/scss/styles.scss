@@ -554,6 +554,26 @@
   .destination-container__btn{
     margin: 2rem 0;
   }
+  .testimonyCountry{
+    width: 100%;
+    &__nameCountry{
+      font-size: 1.5rem;
+    }
+    &__nameCountry,
+    &__description{
+      width: 100%;
+      padding: 1rem 2rem;
+      margin: 0;
+    }
+    &__nameTourist{
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after{
+    display: none;
+  }
   .blog-honey-container{
     width: 100%;
   }

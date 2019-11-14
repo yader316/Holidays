@@ -736,6 +736,20 @@
     width: 100%; }
   .destination-container__btn {
     margin: 2rem 0; }
+  .testimonyCountry {
+    width: 100%; }
+    .testimonyCountry__nameCountry {
+      font-size: 1.5rem; }
+    .testimonyCountry__nameCountry, .testimonyCountry__description {
+      width: 100%;
+      padding: 1rem 2rem;
+      margin: 0; }
+    .testimonyCountry__nameTourist {
+      width: 100%;
+      font-size: 1.5rem; }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none; }
   .blog-honey-container {
     width: 100%; }
   .blog-honey-container__cards {
