@@ -19,7 +19,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px; }
 
-.card__container, .blog-container, .blog-container-abajoArriba__blogOne, .honey-container, .subscribe-container, .package-container, .featured-container, .destination-container, .talkUs-container__infoAddress {
+.card__container, .blog-container, .blog-container-abajoArriba__blogOne, .testimonyCountry__info, .honey-container, .subscribe-container, .package-container, .featured-container, .destination-container, .talkUs-container__infoAddress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +39,7 @@
 .header-container, .header-container__btn, .more-container__img-one, .more-container__img-two {
   position: absolute; }
 
-.card__linea, .blog-container__linea, .blog-container-abajoArriba__linea, .card-image-container__linea, .more-container__linea, .package-container__linea, .featured-container__linea {
+.card__linea, .blog-container__linea, .blog-container-abajoArriba__linea, .card-image-container__linea, .testimonyCountry__linea, .more-container__linea, .package-container__linea, .featured-container__linea {
   border-bottom: 2px solid #D51945;
   color: transparent; }
 
@@ -218,6 +218,41 @@
     margin-bottom: .5rem; }
   .card-image-container__description {
     padding: 0 1rem; }
+
+.testimonyCountry {
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+  .testimonyCountry__info {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(126, 124, 124, 0.7); }
+  .testimonyCountry__nameCountry {
+    width: 60%;
+    text-align: center;
+    padding: 4rem 0 3rem;
+    font-size: 2rem; }
+  .testimonyCountry__nameTourist, .testimonyCountry__description {
+    width: 50%;
+    text-align: center; }
+  .testimonyCountry__nameCountry, .testimonyCountry__nameTourist {
+    text-transform: capitalize; }
+  .testimonyCountry__nameTourist {
+    font-size: 2rem;
+    font-weight: lighter; }
+  .testimonyCountry__nameCountry, .testimonyCountry__nameTourist, .testimonyCountry__description {
+    color: black; }
+  .testimonyCountry__description, .testimonyCountry__linea {
+    margin-bottom: 3rem; }
+  .testimonyCountry__linea {
+    width: 15%;
+    margin-top: .5rem; }
 
 .body-container {
   overflow-x: hidden; }

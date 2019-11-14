@@ -1,0 +1,48 @@
+.testimonyCountry{
+  width: 100%;
+  background: {
+    size: cover;
+    position: top center;
+    repeat:no-repeat;
+  };
+  &__info{
+    @extend %d-flex-column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(126, 124, 124, 0.7);
+  }
+  &__nameCountry{
+    width: 60%;
+    text-align: center;
+    padding: 4rem 0 3rem;
+    font-size: 2rem;
+  }
+  &__nameTourist,
+  &__description{
+    width: 50%;
+    text-align: center;
+  }
+  &__nameCountry,
+  &__nameTourist{
+    text-transform: capitalize;
+  }
+  &__nameTourist{
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  &__nameCountry,
+  &__nameTourist,
+  &__description{
+    color:black; 
+  }
+  &__description,
+  &__linea{
+    margin-bottom: 3rem;
+  }
+  &__linea{
+    @extend %border-linea;
+    width: 15%;
+    margin-top:.5rem; 
+  }
+}

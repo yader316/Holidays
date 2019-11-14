@@ -7,6 +7,7 @@
     <meta name="description" content="Este citio es muy chevere">
     <title>Honey Moon - Yad31</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
   </head>
   <body class="body-container">
     <main class="main-wrapper">
@@ -120,7 +121,35 @@
         </article>
         <button class="destination-container__btn">view more destination</button>
       </section>
-      <section class="testimoni-container"></section>
+      <section class="testimony-container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonyCountry" style="background-image: url(img/pareja-2.png)">
+                <div class="testimonyCountry__info">
+                  <h1 class="testimonyCountry__nameCountry">Greece is a surprising country with every coner</h1>
+                  <p class="testimonyCountry__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h2 class="testimonyCountry__nameTourist">yader mendoza</h2>
+                  <div class="testimonyCountry__linea"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonyCountry" style="background-image: url(img/pareja-2.png)">
+                <div class="testimonyCountry__info">
+                  <h1 class="testimonyCountry__nameCountry">Greece is a surprising country with every coner</h1>
+                  <p class="testimonyCountry__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h2 class="testimonyCountry__nameTourist">taislani mendoza</h2>
+                  <div class="testimonyCountry__linea"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
       <section class="blog-honey-container">
         <h1 class="blog-honey-container__title">blog</h1>
         <p class="blog-honey-container__subtitle">Sumpah ini semua kontennya nyolong dari blog orang</p>
@@ -181,4 +210,6 @@
     </main>
   </body>
   <script src="js/script-dist.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/sliderTourist-dist.js"></script>
 </html>

@@ -4,6 +4,7 @@ append config
     -currentPage = 'body home'
 prepend styles
     link(rel="stylesheet", href="css/styles.css")
+    link(rel="stylesheet", href="css/swiper.min.css")
 block content
     main.main-wrapper
         .honey-container
@@ -64,7 +65,16 @@ block content
                 .destination-container__blogTwo
                     +card-AbajoArriba('middle.png','middle east paradise','6 days 5 night','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','view detail')
             button.destination-container__btn view more destination
-        section.testimoni-container
+        section.testimony-container
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        +testimony-Country('pareja-2.png','Greece is a surprising country with every coner','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','yader mendoza')
+                    .swiper-slide
+                        +testimony-Country('pareja-2.png','Greece is a surprising country with every coner','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','taislani mendoza')
+                .swiper-pagination
+                .swiper-button-next
+                .swiper-button-prev
         section.blog-honey-container
             h1.blog-honey-container__title blog
             p.blog-honey-container__subtitle Sumpah ini semua kontennya nyolong dari blog orang
@@ -106,3 +116,5 @@ block content
 
 block script
     script(src='js/script-dist.js')
+    script(src="js/swiper.min.js")
+    script(src="js/sliderTourist-dist.js")
