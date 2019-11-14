@@ -1,0 +1,20 @@
+block config
+    include config
+include ./componentes/card
+include ./componentes/card-izq-dere
+include ./componentes/menu-barras
+include ./componentes/card-abajo-arriba
+include ./componentes/card-con-imagen
+
+doctype
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="description" content= metaDescription)
+        title= `${pageTitle} - ${siteName}`
+        block styles
+    body.body-container
+        block content
+    block script

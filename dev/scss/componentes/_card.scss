@@ -1,0 +1,16 @@
+.card__container{
+  @extend %d-flex-column;
+}
+.card__title{ 
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.card__linea{
+  width: 50px;
+  margin: 0 1rem 1rem;
+  @extend %border-linea;
+}
+.card__description{
+  padding-left: 2rem;
+}

@@ -1,0 +1,7 @@
+mixin cardImage(carImg,carTitle,cardDescription)
+  article.card-image-container
+    figure.card-image-container__image-container
+      img.card-image-container__img(src=`img/${carImg}`, alt="")
+    h1.card-image-container__title #{carTitle}
+    .card-image-container__linea
+    p.card-image-container__description #{cardDescription}

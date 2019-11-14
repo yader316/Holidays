@@ -1,0 +1,108 @@
+extends includes/template
+append config
+    -pageTitle = 'Honey Moon'
+    -currentPage = 'body home'
+prepend styles
+    link(rel="stylesheet", href="css/styles.css")
+block content
+    main.main-wrapper
+        .honey-container
+            p.honey-container__title-one enjoy your
+            p.honey-container__title-two honey moon
+            p.honey-container__title-three left the rest to us
+        header.header-container
+            .header-container__name-page
+                +menu-barras
+                h1.header-container__title sliyp
+            nav.header-container__navigation
+                ul.header-container__menu 
+                    li.header-container__items: a(href="#").header-container__link home
+                    li.header-container__items: a(href="#").header-container__link about
+                    li.header-container__items: a(href="#").header-container__link package
+                    li.header-container__items: a(href="#").header-container__link trip
+                    li.header-container__items: a(href="#").header-container__link testimony
+                    li.header-container__items: a(href="#").header-container__link blog
+            button.header-container__btn talk to us
+        section.more-container
+            .more-container__info
+                h1.more-container__title more than 20 years of experience
+                p.more-container__subtitle 
+                    | Ngga ada itu dua puluh tahun, baru bikin aja ini, gaya gayaan aja buat nipu kalian 
+                .more-container__linea 
+                p.more-container__paragraph 
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis quibusdam, deleniti, laboriosam sequi reprehenderit quia eos doloribus aliquam, eveniet soluta vel esse corporis aspernatur. Saepe earum quaerat quibusdam in.
+            .more-container__gallery
+                figure.more-container__img-one
+                    img.more-container__img(src="img/pareja.png", alt="")
+                figure.more-container__img-two
+                    img.more-container__img(src="img/manos.png", alt="")
+        section.subscribe-container
+            p.subscribe-container__info Subscribe to our newsletter for deal and promo
+            form.subscribe-container__form(action="")
+                input.subscribe-container__txt(type="email"  placeholder="ejemplo@ejemplo.com" )
+                button.subscribe-container__btn subscribe 
+        section.package-container
+            .package-container__linea
+            .package-container__info
+                h1.package-container__title our package
+                span.package-container__subtitle Jangan Percaya Tipu Tipu Aja Ini
+            .package-container__card
+                +card('luxury paradise','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+                +card('deluxe gold','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+                +card('premium silver','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+        section.featured-container
+            .featured-container__linea
+            .featured-container__info
+                h1.featured-container__title featured trip
+                p.featured-container__subtitle sama aja ini semua g ada beba
+        section.destination-container
+            article.destination-container__block-one
+                +card-IzquierdaDerecha('luxury greece','6 days 5 night','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','view detail')
+            article.destination-container__block-two
+                .destination-container__blogOne
+                    +card-AbajoArriba('belgica-hotel.png','belgica village','3 days 2 night','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','view detail')
+                .destination-container__blogTwo
+                    +card-AbajoArriba('middle.png','middle east paradise','6 days 5 night','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','view detail')
+            button.destination-container__btn view more destination
+        section.testimoni-container
+        section.blog-honey-container
+            h1.blog-honey-container__title blog
+            p.blog-honey-container__subtitle Sumpah ini semua kontennya nyolong dari blog orang
+            .blog-honey-container__cards  
+                +cardImage('blog-comida.png','choose your breakfast carefully','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+                +cardImage('blog-pareja.png','take your homeymoon to the next level','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+                +cardImage('blog-mujer.png','Don’t desttroy your holiday with to many gadget','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+        footer.talkUs-container
+            .talkUs-container__info
+                .talkUs-container__dont
+                    h1.talkUs-container__titleDont dont be shy talk to us 
+                    .talkUs-container__linea
+                    p.talkUs-container__paragraph 
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    button.talkUs-container__btn contact us
+                .talkUs-container__address
+                    figure.talkUs-container__img-container
+                        img.talkUs-container__img(src="img/repetir-cuadricula.png", alt="")
+                    .talkUs-container__infoAddress
+                        h1.talkUs-container__titleAddress address 
+                        .talkUs-container__linea
+                        span.talkUs-container__info-contact PKF Managua
+                        span.talkUs-container__info-contact 505 villa austria 
+                        span.talkUs-container__info-contact Managua, Managua
+                        span.talkUs-container__info-contact xxxx - xxxx
+                        span.talkUs-container__info-contact dddd - dddd
+        section.footer-navigation 
+            .footer-navigation__container
+                .footer-navigation__title-container
+                    h1.footer-navigation__title sliyp
+                    span.footer-navigation__subtitle 2019 all rigth reserved
+                nav.footer-navigation__menu-container
+                    ul.footer-navigation__menu 
+                        li.footer-navigation__items: a(href="#").footer-navigation__link faq
+                        li.footer-navigation__items: a(href="#").footer-navigation__link help
+                        li.footer-navigation__items: a(href="#").footer-navigation__link privacy
+                        li.footer-navigation__items: a(href="#").footer-navigation__link term
+
+
+block script
+    script(src='js/script-dist.js')

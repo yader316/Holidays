@@ -1,0 +1,29 @@
+.menu-transform{
+  display: none;
+}
+.bar1,
+.bar2,
+.bar3{
+  @extend %barras;
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}  
+.change .bar3 {
+  transform: rotate(45deg) translate(-9px, -6px);
+}
+.header-container__menu.active-menu{
+  width: 100%;
+  margin-top:2rem;
+  padding: 1rem; 
+  position: absolute;
+  right: 0;
+  top: 40px;
+  display: block;
+  text-align: left;
+  background:map-get($colors-page, color-principal);
+}

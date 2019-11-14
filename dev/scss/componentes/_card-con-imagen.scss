@@ -1,0 +1,23 @@
+.card-image-container{
+  width: 100%;
+  margin: 1rem;
+  &__img{
+    width:100%;
+    border: 10px solid white;
+    box-shadow: 0 0 4px 1px black;
+  }
+  &__title{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 1rem .2rem;
+  }
+  &__linea{
+    @extend %border-linea;
+    width: 80px;
+    margin-bottom: .5rem ;
+  }
+  &__description{
+    padding: 0 1rem;
+  }
+
+}

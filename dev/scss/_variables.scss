@@ -1,0 +1,54 @@
+$rutaImg: '../img/';
+
+$colors-page:(
+    color-principal: #ffffff,
+    color-secondary:#EE2655,
+    color-three:#D51945,
+    color-btn-header: #ED093E,
+    color-txt:#F85B80,
+    color-package:#F7F7F7
+);
+
+%d-flex{
+    display: flex;
+}
+%grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+%d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+%container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+%position-re{
+    position: relative;
+}
+%position-ab{
+    position: absolute;
+}
+%border-linea{
+    border-bottom: 2px solid map-get($colors-page, color-three);
+    color: transparent;
+}
+%barras{
+    width: 35px;
+    height: 5px;
+    background:map-get($colors-page , color-btn-header);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+%backgroundCenter{
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+%menu{
+    margin: 1rem;
+    list-style: none;
+}

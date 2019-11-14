@@ -1,0 +1,8 @@
+mixin card-AbajoArriba(img,blogTitle,blogSubTitle,blogParagraph,blogLink)
+  div(class="blog-container-abajoArriba" style=`background-image: url(img/${img})`)
+    .blog-container-abajoArriba__blogOne
+      h1.blog-container-abajoArriba__title #{blogTitle}
+      p.blog-container-abajoArriba__subtitle #{blogSubTitle}
+      .blog-container-abajoArriba__linea
+      p.blog-container-abajoArriba__paragraph #{blogParagraph}
+      a.blog-container-abajoArriba__link(href="#") #{blogLink}
