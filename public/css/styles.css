@@ -212,7 +212,8 @@
   .card-image-container__title {
     text-transform: capitalize;
     font-size: 1.1rem;
-    padding: 1rem .2rem; }
+    padding-right: 5rem;
+    padding-bottom: .5rem; }
   .card-image-container__linea {
     width: 80px;
     margin-bottom: .5rem; }
@@ -346,7 +347,7 @@
 
 .more-container {
   padding-top: 4rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 10rem; }
 
 .more-container__info {
   width: 50%; }
@@ -403,7 +404,6 @@
   font-style: italic; }
 
 .subscribe-container__form {
-  width: 800px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -686,7 +686,9 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0; }
   .subscribe-container__txt {
     border: none;
     background: none;
@@ -779,7 +781,8 @@
   .card-image-container__img {
     border: none;
     -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-bottom: 2rem; }
   .card-image-container__title {
     text-align: center;
     padding: 0 2rem 1rem; }
@@ -803,12 +806,13 @@
   .talkUs-container__paragraph {
     padding: 0 1rem 2rem; }
   .talkUs-container__address {
-    position: relative;
-    margin: 3rem 0; }
+    margin: 3rem 0;
+    position: relative; }
   .talkUs-container__img-container {
     position: absolute;
-    right: -100px; }
-  .talkUs-container__img {
+    right: -100px;
+    bottom: 60px;
+    margin: 0;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }

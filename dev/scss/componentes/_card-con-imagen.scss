@@ -9,7 +9,8 @@
   &__title{
     text-transform: capitalize;
     font-size: 1.1rem;
-    padding: 1rem .2rem;
+    padding-right: 5rem;
+    padding-bottom: .5rem;
   }
   &__linea{
     @extend %border-linea;

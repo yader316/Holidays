@@ -112,7 +112,7 @@
   @extend %container;
   @extend %d-flex;
   padding-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 .more-container__info{
   width: 50%;
@@ -171,7 +171,6 @@
 }
 .subscribe-container__form{
   @extend %d-flex;
-  width: 800px;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -488,6 +487,8 @@
   }
   .subscribe-container__form{
     flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
   }
   .subscribe-container__txt{
     border: none;
@@ -599,6 +600,7 @@
   .card-image-container__img{
     border: none;
     box-shadow: none;
+    margin-bottom: 2rem;
   }
   .card-image-container__title{
     text-align: center;
@@ -628,14 +630,14 @@
     padding: 0 1rem 2rem;
   }
   .talkUs-container__address{
-    position: relative;
     margin: 3rem 0;
+    position: relative;
   }
   .talkUs-container__img-container{
     position: absolute;
     right: -100px;
-  }
-  .talkUs-container__img{
+    bottom: 60px;
+    margin: 0;
     transform: rotate(90deg);
   }
   .footer-navigation__container{
