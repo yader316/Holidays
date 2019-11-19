@@ -256,6 +256,7 @@
     margin-top: .5rem; }
 
 .body-container {
+  width: 100%;
   overflow-x: hidden; }
 
 .main-wrapper {
